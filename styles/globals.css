@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --font-color-light: #ffffff;
+  --border-gray: #222;
+  --nflx-black: #000000;
+  --nflx-red: #e50914;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--font-color-light);
+}
+
+/* FONT STYLING */
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.main__header {
+  margin-bottom: 1rem;
+  max-width: 640px;
+}
+.main__header2 {
+  margin-bottom: 1rem;
+}
+
+/* BUTTON STYLING */
+
+.btn {
+  background: var(--nflx-red);
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  padding: 5.6px 2rem;
+  border-radius: 5px;
+}
+
+/* MAIN STYLING */
+.main-intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0 5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.email-input {
+  padding: 1rem;
+  max-width: 400px;
+  width: 300px;
+  min-width: 200px;
+}
+
+.btn-get-started {
+  align-self: center;
+  margin-top: 1rem;
+}
+
+section {
+  height: 900px;
+  background-color: var(--nflx-black);
+  width: 100%;
+  padding: 4.375rem 0;
+  text-align: center;
+}
+
+.story-card {
+  width: 100%;
+  border-top: 9px solid var(--border-gray);
+  border-bottom: 9px solid var(--border-gray);
+  padding: 0 2.5rem;
+}
