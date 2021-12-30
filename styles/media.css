@@ -1,0 +1,49 @@
+/* ALL STYLES ABOVE 640PX */
+
+@media (min-width: 550px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  .main__header {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-top: 2rem;
+  }
+  .main__header2 {
+    font-size: 1.625rem;
+  }
+
+  .main__email-input {
+    width: 450px;
+  }
+
+  .story-card__header {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 3.125rem;
+  }
+  h2 {
+    font-size: 1.625rem;
+  }
+  .main-intro {
+    max-width: 950px;
+  }
+  .story-card {
+    flex-direction: row;
+  }
+  .story-card__text-container {
+    text-align: left;
+    padding: 4.375rem 2.5rem;
+  }
+}
+/* 1000+
+H1 50PX
+H2 26PX
+2 COLUMN LAYOUT FOR CARDS */

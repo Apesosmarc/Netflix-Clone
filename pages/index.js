@@ -50,17 +50,19 @@ export default function Home() {
         <div className="main__input-container flex mt-4">
           <input placeholder="Email address" className="main__email-input" />
           <button onClick={() => signIn()} className="btn btn-get-started">
-            Get Started >
+            Get Started
           </button>
         </div>
       </main>
       <section className="story-card-section">
         <div className="story-card animation-card">
-          <h1 className="story-card__header">Enjoy on your TV.</h1>
-          <h2 className="story-card__header2">
-            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
-            players, and more.
-          </h2>
+          <div className="story-card__text-container story-card__text-container--tv">
+            <h1 className="story-card__header">Enjoy on your TV.</h1>
+            <h2 className="story-card__header2">
+              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+              Blu-ray players, and more.
+            </h2>
+          </div>
           <div className="story-card__img-container">
             <div className="story-card__animation-container">
               <img className="story-card__img" src="/images/nflx-tv.png" />
@@ -80,11 +82,13 @@ export default function Home() {
         </div>
 
         <div className="story-card animation-card">
-          <h1 className="story-card__header">Watch everywhere.</h1>
-          <h2 className="story-card__header2">
-            Stream unlimited movies and TV shows on your phone, tablet, laptop,
-            and TV without paying more.
-          </h2>
+          <div className="story-card__text-container">
+            <h1 className="story-card__header">Watch everywhere.</h1>
+            <h2 className="story-card__header2">
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV without paying more.
+            </h2>
+          </div>
           <div className="story-card__img-container">
             <div className="story-card__animation-container">
               <img className="story-card__img" src="/images/macmonitor.png" />
@@ -104,11 +108,14 @@ export default function Home() {
         </div>
 
         <div className="story-card animation-card">
-          <h1 className="story-card__header">Create profiles for kids.</h1>
-          <h2 className="story-card__header2">
-            Send kids on adventures with their favorite characters in a space
-            made just for them—free with your membership.
-          </h2>
+          <div className="story-card__text-container">
+            <h1 className="story-card__header">Create profiles for kids.</h1>
+            <h2 className="story-card__header2">
+              Send kids on adventures with their favorite characters in a space
+              made just for them—free with your membership.
+            </h2>
+          </div>
+
           <div className="story-card__img-container">
             <div className="story-card__animation-container">
               <img className="story-card__img" src="/images/nflxkids.png" />
