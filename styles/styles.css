@@ -40,13 +40,46 @@
 .btn {
   font-size: 1.125rem /* 18px */;
   line-height: 1.75rem /* 28px */;
-  padding: 5.6px 2rem;
+  padding: 0.2rem 0.9rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: inherit;
   border: none;
-  min-width: 150px;
+  min-width: 50px;
+  color: white;
+  text-transform: none;
+}
+
+.btn--language-select {
+  max-width: 50px;
+  font-size: 0.9rem;
+  line-height: 1.75rem;
+  padding: 0.2rem 0.9rem;
+}
+
+.btn--language-select {
+  background-color: var(--nflx-black);
+  border: 1px solid var(--font-color-light);
+  font-size: 0.6rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  text-transform: none;
+  margin-right: 2rem;
+}
+
+.language__arrow {
+  margin-top: 0.5em;
+  font-size: 11px;
+}
+
+.language__menu-item {
+  width: 115px;
+  background-color: black;
 }
 
 /* HEADER STYLING */
@@ -54,12 +87,23 @@
 .nflx-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 2rem 3rem;
 }
 
 .nflx-icon {
   width: 7rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn--signin {
+  width: 90px;
+  height: 62.3px;
 }
 
 /* MAIN STYLING */

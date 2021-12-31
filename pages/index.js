@@ -1,10 +1,19 @@
 import Head from "next/head";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { useEffect } from "react";
-import { Router } from "next/router";
+import React, { useState } from "react";
+// COMPONENTS
+import LanguageSelect from "../components/LanguageSelect";
+// Bilingual Copy
+import { content } from "../content";
 
 export default function Home() {
   const { data: session } = useSession();
+
+  const [language, setLanguage] = useState("English");
+
+  const selectLanguage = (lang) => {
+    setLanguage(lang);
+  };
 
   return (
     <div className="container ">
@@ -29,38 +38,43 @@ export default function Home() {
             />
           </svg>
         </div>
-        <div>
+
+        <div className="btn-container">
+          <LanguageSelect selectLanguage={selectLanguage} language={language} />
           {!session ? (
-            <button onClick={() => signIn("google")} className="btn">
-              Sign In
+            <button
+              onClick={() => signIn("google")}
+              className="btn btn--signin"
+            >
+              {content[language].btnSignIn}
             </button>
           ) : (
-            <button onClick={() => signOut()} className="btn">
-              Sign Out
+            <button onClick={() => signOut()} className="btn btn--signin">
+              {content[language].btnSignOut}
             </button>
           )}
         </div>
       </header>
       <main className="main-intro">
-        <h1 className="main__header">Unlimited movies, TV shows, and more.</h1>
-        <h2 className="main__header2">Watch anywhere. Cancel anytime.</h2>
-        <h2 className="main__header2">
-          Ready to watch? Enter your email to create or restart your membership.
-        </h2>
+        <h1 className="main__header"> {content[language].mainHeader}</h1>
+        <h2 className="main__header2"> {content[language].mainHeader2[0]}</h2>
+        <h2 className="main__header2">{content[language].mainHeader2[1]}</h2>
         <div className="main__input-container flex mt-4">
           <input placeholder="Email address" className="main__email-input" />
           <button onClick={() => signIn()} className="btn btn-get-started">
-            Get Started
+            {content[language].btnGetStarted}
           </button>
         </div>
       </main>
       <section className="story-card-section">
         <div className="story-card animation-card">
           <div className="story-card__text-container story-card__text-container--tv">
-            <h1 className="story-card__header">Enjoy on your TV.</h1>
+            <h1 className="story-card__header">
+              {" "}
+              {content[language].storyCardHeader[0]}
+            </h1>
             <h2 className="story-card__header2">
-              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
-              Blu-ray players, and more.
+              {content[language].storyCardHeader2[0]}
             </h2>
           </div>
           <div className="story-card__img-container">
@@ -83,10 +97,12 @@ export default function Home() {
 
         <div className="story-card animation-card">
           <div className="story-card__text-container">
-            <h1 className="story-card__header">Watch everywhere.</h1>
+            <h1 className="story-card__header">
+              {" "}
+              {content[language].storyCardHeader[1]}
+            </h1>
             <h2 className="story-card__header2">
-              Stream unlimited movies and TV shows on your phone, tablet,
-              laptop, and TV without paying more.
+              {content[language].storyCardHeader[1]}
             </h2>
           </div>
           <div className="story-card__img-container">
@@ -109,10 +125,12 @@ export default function Home() {
 
         <div className="story-card animation-card">
           <div className="story-card__text-container">
-            <h1 className="story-card__header">Create profiles for kids.</h1>
+            <h1 className="story-card__header">
+              {" "}
+              {content[language].storyCardHeader[2]}
+            </h1>
             <h2 className="story-card__header2">
-              Send kids on adventures with their favorite characters in a space
-              made just for them—free with your membership.
+              {content[language].storyCardHeader[2]}
             </h2>
           </div>
 
