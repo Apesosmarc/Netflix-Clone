@@ -29,6 +29,8 @@
   }
   .btn--signin {
     max-width: 150px;
+    height: auto;
+    width: auto;
   }
   .btn-container {
     justify-content: space-between;
