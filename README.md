@@ -10,7 +10,7 @@ The best way for me to learn is by doing. I wanted to make a reasonable clone of
 
 Needless to say I believe it will be hard to go back to plain React after using Next-Auth. 
 
-As seen in this application, with just a simple import, the next-auth SessionProvider uses React-Context under the hood to share current sessions throughout all components. Built in custom hooks such as signIn and signOut handle the obvious as well as redirects back to the appropriate pages. In the Next-Auth docs there are a bunch of providers for services such as google, github, instagram that you can plug in and connect with straight away.
+Next Auth makes Oauth2 authentication easy with custom hooks that allow you to access authentication status and userdata from any component. Next Auth also has a bunch of sessionproviders you can use to make requests to auth API's without having to define your own signIn, signOut and sessionListen functions.
 
 This application also uses CSS to create a responsive layout of the Netflix landing page. By using z-index and object position properties I was able to overlay images over videos within a container to simulate movies playing on a screen throughout all device sizes. 
 
