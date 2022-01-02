@@ -14,16 +14,18 @@ This application also uses CSS to create a responsive layout of the Netflix land
 
 Using functional components and the useState hook, there is a language selection menu that changes the copy of the website to the specified language. The dropdown menu was imported from materialUI and styled by overriding the Mui CSS classes.
 
+## tldr Overview & Features
+- Responsive clone of Netflix.com
+- NextAuth OAuth2 providers for Github authentication and login
+- Language selection component
+- Image/Video overlays using CSS object positioning and z-index.
+
 ## Technology
 - NextJS
 - Next-Auth for github OAuth2
 - Material UI 
 - CSS
 
-## tldr Features
-- Responsive clone of Netflix.com
-- NextAuth OAuth2 providers for Github authentication and login
-- Language selection component
-- Image/Video overlays using CSS object positioning and z-index.
+
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
