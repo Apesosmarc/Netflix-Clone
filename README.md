@@ -2,6 +2,8 @@
 
 A basic clone of the Netflix landing page with an emphasis on exploring NextJS and Next-Auth for extremely easy OAuth2 authentication.
 
+(Live Site)[https://affectionate-carson-970e4d.netlify.app]
+
 ## Overview
 
 The best way for me to learn is by doing. I wanted to make a reasonable clone of the Netflix landing page using NextJS and CSS. The main goal of this app was to explore Next Auth by cloning Netflix.com.
