@@ -87,6 +87,10 @@
   color: white;
 }
 
+.MuiList-root {
+  background-color: var(--nflx-black);
+}
+
 /* HEADER STYLING */
 
 .nflx-header {
