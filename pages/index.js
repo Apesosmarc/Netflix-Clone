@@ -84,9 +84,10 @@ export default function Home() {
               <div className="story-card__animation story-card__animation--tv">
                 <video
                   className="our-story-card-video"
-                  autoPlay={true}
-                  playsInline={true}
-                  loop={true}
+                  autoPlay="true"
+                  playsInline="true"
+                  muted="false"
+                  loop="true"
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
                   type="video/mp4"
                 ></video>
@@ -110,9 +111,9 @@ export default function Home() {
               <img className="story-card__img" src="/images/macmonitor.png" />
               <div className="story-card__animation story-card__animation--mac">
                 <video
-                  class="our-story-card-video"
-                  autoplay="true"
-                  playsinline="true"
+                  className="our-story-card-video"
+                  autoPlay="true"
+                  playsInline="true"
                   muted="false"
                   loop="true"
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
