@@ -2,7 +2,7 @@
 
 A basic clone of the Netflix landing page with an emphasis on exploring NextJS and Next-Auth for extremely easy OAuth2 authentication.
 
-<p align="center"><img src="https://raw.githubusercontent.com/Apesosmarc/Netflix-Clone/main/github_assets/mobile-menu.jpg/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Apesosmarc/Netflix-Clone/main/github_assets/mobile-menu.jpg"/></p>
 
 ### **[Live Site](https://trusting-brahmagupta-a5fc11.netlify.app/)**
 
