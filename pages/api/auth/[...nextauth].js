@@ -6,6 +6,7 @@ export default NextAuth({
     GitHubProvider({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      redirect_uri: "https://affectionate-carson-970e4d.netlify.app/",
     }),
   ],
 });
