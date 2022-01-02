@@ -47,7 +47,7 @@ export default function Home() {
               onClick={() =>
                 signIn("github", {
                   callbackUrl:
-                    "http://https://affectionate-carson-970e4d.netlify.app/",
+                    "http://https://affectionate-carson-970e4d.netlify.app/api/auth",
                 })
               }
               className="btn btn--signin"
