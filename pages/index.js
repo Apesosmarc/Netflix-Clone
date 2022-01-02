@@ -83,11 +83,10 @@ export default function Home() {
               <img className="story-card__img" src="/images/nflx-tv.png" />
               <div className="story-card__animation story-card__animation--tv">
                 <video
-                  class="our-story-card-video"
-                  autoplay="true"
-                  playsinline="true"
-                  muted="false"
-                  loop="true"
+                  className="our-story-card-video"
+                  autoPlay={true}
+                  playsInline={true}
+                  loop={true}
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
                   type="video/mp4"
                 ></video>
