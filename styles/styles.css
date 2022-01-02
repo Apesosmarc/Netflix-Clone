@@ -59,7 +59,7 @@
   padding: 0.2rem 0.9rem;
 }
 
-.btn--language-select {
+.btn--language-select.MuiButton-root {
   background-color: var(--nflx-black);
   border: 1px solid var(--font-color-light);
   font-size: 0.6rem;
@@ -80,6 +80,11 @@
 .language__menu-item {
   width: 115px;
   background-color: black;
+}
+
+.language__menu-item:hover {
+  background-color: black;
+  color: white;
 }
 
 /* HEADER STYLING */

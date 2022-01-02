@@ -3,9 +3,8 @@ import { getSession } from "next-auth/react";
 
 export default async (req, res) => {
   const session = await getSession({ req });
-
   if (session) {
-    res.send(session.user);
+    res.send(session);
   } else {
     res.send("You must be sign in to view the protected content on this page.");
   }
