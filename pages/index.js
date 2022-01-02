@@ -44,11 +44,7 @@ export default function Home() {
           <LanguageSelect selectLanguage={selectLanguage} language={language} />
           {!session ? (
             <button
-              onClick={() =>
-                signIn("github", {
-                  callbackURL: "https://affectionate-carson-970e4d.netlify.app",
-                })
-              }
+              onClick={() => signIn("github")}
               className="btn btn--signin"
             >
               {content[language].btnSignIn}
