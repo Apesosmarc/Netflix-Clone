@@ -103,7 +103,7 @@ export default function Home() {
               {content[language].storyCardHeader[1]}
             </h1>
             <h2 className="story-card__header2">
-              {content[language].storyCardHeader[1]}
+              {content[language].storyCardHeader2[1]}
             </h2>
           </div>
           <div className="story-card__img-container">
@@ -131,7 +131,7 @@ export default function Home() {
               {content[language].storyCardHeader[2]}
             </h1>
             <h2 className="story-card__header2">
-              {content[language].storyCardHeader[2]}
+              {content[language].storyCardHeader2[2]}
             </h2>
           </div>
 
