@@ -4,7 +4,7 @@ A basic clone of the Netflix landing page with an emphasis on exploring NextJS a
 
 <p align="center"><img src="https://raw.githubusercontent.com/Apesosmarc/Netflix-Clone/main/github_assets/mobile-menu.jpg"/></p>
 
-### **[Live Site](https://trusting-brahmagupta-a5fc11.netlify.app/)**
+### **--[Live Site](https://trusting-brahmagupta-a5fc11.netlify.app/)**
 
 ## Overview
 
