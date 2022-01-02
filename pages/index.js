@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="container ">
       <Head>
-        <title>Netflix Clone</title>
+        <title>NextFlix</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
