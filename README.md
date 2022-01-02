@@ -19,9 +19,9 @@ Using functional components and the useState hook, there is a language selection
 - CSS
 
 ## tldr Features
+- Responsive clone of Netflix.com
 - NextAuth OAuth2 providers for Github authentication and login
 - Language selection component
-- Responsive clone of Netflix.com
 - Image/Video overlays using CSS object positioning and z-index.
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
