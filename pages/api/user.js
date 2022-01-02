@@ -7,8 +7,6 @@ export default async (req, res) => {
   if (session) {
     res.send(session.user);
   } else {
-    res.send({
-      error: "You must be sign in to view the protected content on this page.",
-    });
+    res.send("You must be sign in to view the protected content on this page.");
   }
 };

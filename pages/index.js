@@ -1,6 +1,7 @@
 import Head from "next/head";
-import { useSession, signIn, signOut } from "next-auth/react";
 import React, { useState } from "react";
+//Next - Auth
+import { useSession, signIn, signOut } from "next-auth/react";
 // COMPONENTS
 import LanguageSelect from "../components/LanguageSelect";
 // Bilingual Copy
@@ -43,7 +44,7 @@ export default function Home() {
           <LanguageSelect selectLanguage={selectLanguage} language={language} />
           {!session ? (
             <button
-              onClick={() => signIn("google")}
+              onClick={() => signIn("github")}
               className="btn btn--signin"
             >
               {content[language].btnSignIn}
@@ -59,7 +60,7 @@ export default function Home() {
         <h1 className="main__header"> {content[language].mainHeader}</h1>
         <h2 className="main__header2"> {content[language].mainHeader2[0]}</h2>
         <h2 className="main__header2">{content[language].mainHeader2[1]}</h2>
-        <div className="main__input-container flex mt-4">
+        <div className="main__input-container">
           <input placeholder="Email address" className="main__email-input" />
           <button onClick={() => signIn()} className="btn btn-get-started">
             {content[language].btnGetStarted}

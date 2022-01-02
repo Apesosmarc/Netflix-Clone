@@ -28,9 +28,8 @@
     padding: 2rem 3rem;
   }
   .btn--signin {
-    max-width: 150px;
     height: auto;
-    width: auto;
+    width: 150px;
   }
   .btn-container {
     justify-content: space-between;
@@ -61,5 +60,22 @@
     text-align: left;
     padding: 4.375rem 2.5rem;
     max-width: 700px;
+  }
+  .main__input-container {
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0 8rem;
+    height: 64px;
+  }
+  .main__email-input {
+    height: 64px;
+  }
+  .btn-get-started {
+    padding: 1rem;
+    min-width: 200px;
+    height: 64px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8rem;
   }
 }
