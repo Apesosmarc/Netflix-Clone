@@ -59,7 +59,7 @@ export default function Home() {
         <h2 className="main__header2">{content[language].mainHeader2[1]}</h2>
         <div className="main__input-container">
           <input placeholder="Email address" className="main__email-input" />
-          <button onClick={() => signIn()} className="btn btn-get-started">
+          <button className="btn btn-get-started">
             {content[language].btnGetStarted}
           </button>
         </div>
