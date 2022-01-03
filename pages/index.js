@@ -43,10 +43,7 @@ export default function Home() {
         <div className="btn-container">
           <LanguageSelect selectLanguage={selectLanguage} language={language} />
           {!session ? (
-            <button
-              onClick={() => signIn("github")}
-              className="btn btn--signin"
-            >
+            <button onClick={() => signIn()} className="btn btn--signin">
               {content[language].btnSignIn}
             </button>
           ) : (
